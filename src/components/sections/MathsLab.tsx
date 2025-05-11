@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { InlineMath, BlockMath } from 'react-katex'
+import { BlockMath } from 'react-katex'
 import 'katex/dist/katex.min.css'
 
 interface MathProblem {
