@@ -11,6 +11,7 @@ import RoastMaster from './components/sections/RoastMaster'
 import GautamBot from './components/sections/GautamBot'
 import BirthdayWishes from './components/sections/BirthdayWishes'
 import BrainMode from './components/sections/BrainMode'
+import AudioPlayer from './components/AudioPlayer'
 
 function App() {
   const [isBrainMode, setIsBrainMode] = useState(false)
@@ -127,17 +128,20 @@ function App() {
           </div>
         </motion.div>
       ) : (
-        <motion.button
-          className="fixed bottom-8 right-8 btn-primary z-50"
-          onClick={() => setIsBrainMode(!isBrainMode)}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-        >
-          {isBrainMode ? 'Exit Brain Mode' : 'Enter Brain Mode'}
-        </motion.button>
+        <>
+          <motion.button
+            className="fixed bottom-8 right-8 btn-primary z-50"
+            onClick={() => setIsBrainMode(!isBrainMode)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1 }}
+          >
+            {isBrainMode ? 'Exit Brain Mode' : 'Enter Brain Mode'}
+          </motion.button>
+          <AudioPlayer />
+        </>
       )}
     </div>
   )
