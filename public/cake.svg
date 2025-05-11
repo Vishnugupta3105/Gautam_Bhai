@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cake base -->
+  <path d="M4 24H28V28H4V24Z" fill="#646CFF"/>
+  <!-- Cake layers -->
+  <path d="M6 16H26V24H6V16Z" fill="#535BF2"/>
+  <path d="M8 8H24V16H8V8Z" fill="#646CFF"/>
+  <!-- Candle -->
+  <rect x="15" y="4" width="2" height="4" fill="#FFD700"/>
+  <!-- Flame -->
+  <path d="M16 2C16 2 15 4 16 4C17 4 16 2 16 2Z" fill="#FF6B6B"/>
+</svg> 
